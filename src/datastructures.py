@@ -43,11 +43,14 @@ class FamilyStructure:
 
     def add_member(self, member):
         # fill this method and update the return
-        return self.member
+        #id= {"id": self._generateId(), "last_name" : last_name}
+        #member= member + id
+        return self._members(member)
         pass
 
-    def delete_member(self, id):
+    def delete_member(self, member_id):
         # fill this method and update the return
+        return self._members(member_id)
         pass
 
     def update_member(self, id, member):
